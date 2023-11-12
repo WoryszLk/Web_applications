@@ -1,0 +1,92 @@
+/* Resetowanie stylów */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Podstawowe style dla strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nagłówek */
+#header {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Kontener dla sekcji */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* Ta właściwość jest kluczowa dla responsywności */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Lewa nawigacja */
+#left {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Główna treść */
+#center {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Prawa nawigacja */
+#right {
+    width: 150px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Nowy styl dla nawigacji */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+nav ul a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Stopka */
+#footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styl dla małych ekranów (o szerokości do 768px) */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column; /* Elementy układają się jeden pod drugim na małych ekranach */
+    }
+
+    #left, #center, #right {
+        width: 100%; /* Elementy zajmują pełną szerokość na małych ekranach */
+    }
+}

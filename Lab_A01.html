@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Pierwsza strona HTML Lab0</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+        #header {
+            text-align: center;
+            border-radius: 750px;
+        }
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer ul,li{
+			clear: both;
+           
+		}
+		
+		
+		* html #left {
+			left: 150px;
+		}
+
+		
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+			background-image: url("cool-background.png");
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #BCCE98;
+		}
+
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#right {
+			background: #F7FDEB;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+	</style>
+	
+</head>
+
+<body background="backgr.png">
+
+	<header id="header">
+        <h1>Młodzi Testerzy</h1>
+        <h2>Szybkie i skuteczne kształcenie testerów</h2>
+    </header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<article>
+			
+                <h3>Czym jest testowanie?</h3>
+                <p>
+                    W tym celu zatrudniani są testerzy oprogramowania – ich rolą jest sprawdzenie czy wszystko jest zgodne z tym, co założono na początku oraz czy podczas korzystania z aplikacji nie pojawiają się przeszkody bądź też błędy.
+                </p>
+                <h3>Narzędzia wykorzystywane w testowaniu</h3>
+                <p>
+                    Najbardziej popularne narzędzie w warsztacie pracy testera to: JIRA (13,66%), narzędzia autorskie/wewnętrzne/własne/firmowe (10,35%), HP ALM Quality Center (6.42%), JMeter (5.59%), Selenium (5.18%), SoapUI (3,73%); najbardziej popularne są narzędzia do zarządzania testami i raportowania (75.47%)
+                </p>
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+			<h3>Nawigacja</h3>
+			<ul>
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="#">O Nas</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+		</nav>
+
+		<div id="right" class="column">
+			<h5>Miejsce na reklamy<h5>
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer">
+            <h3>Kontakt</h3>
+            <ul>
+                <li>Nr telefonu - 111 222 333</li>
+                <li>Adres - Tulipanowa 35</li>
+                <li>Email - abcdefg@poczta.com</li>
+            </ul>
+        </footer>
+	</div>
+
+</body>
+
+</html>
