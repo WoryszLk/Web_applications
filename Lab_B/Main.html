@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        
+        <h1>Lista zadań</h1>
+        <div id="search_task"> 
+        <input type="text" id="search" placeholder="Wyszukaj...">
+        <button id="search-button">Wyszukaj</button>
+        
+        </div>
+        <div id="add-task-form">
+            <div id="task-inputs">
+                <input type="text" id="new-task" placeholder="Dodaj nowe zadanie">
+                <input type="datetime-local" id="due-date">
+            </div>
+        </div>
+
+        <button id="add-task">Dodaj zadanie</button>
+
+
+
+        <ul id="task-list">           
+        </ul>
+    </div>
+
+    <script src="Functions.js"></script>
+</body>
+</html>
