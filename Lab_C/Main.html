@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Map Puzzle</title>
+</head>
+<body>
+    <div id="map" style="height: 400px;"></div>
+    <button id="myLocationBtn">Moja lokalizacja</button>
+    <button id="downloadMapBtn">Pobierz mapę</button>
+    <div id="puzzleWrapper">
+        <div id="puzzleBoard"></div>
+        <div id="puzzleFrame"></div>
+    </div>
+    <div id="dropArea">Przeciągnij puzzle tutaj</div> <!-- Nowy element do przeciągania puzzli -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
